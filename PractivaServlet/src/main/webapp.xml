@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context docBase="C:\Users\user\IdeaProjects\PracticaServlet\PractivaServlet\src\main">
+  <Resources cacheMaxSize="10240">
+    <PreResources base="C:/Users/user/IdeaProjects/PracticaServlet/PractivaServlet/target/classes" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+    <PostResources base="C:/Users/user/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.7.7/org.eclipse.persistence.core-2.7.7.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/org.eclipse.persistence.core-2.7.7.jar"/>
+    <PostResources base="C:/Users/user/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/2.7.7/org.eclipse.persistence.asm-2.7.7.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/org.eclipse.persistence.asm-2.7.7.jar"/>
+    <PostResources base="C:/Users/user/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.antlr/2.7.7/org.eclipse.persistence.antlr-2.7.7.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/org.eclipse.persistence.antlr-2.7.7.jar"/>
+    <PostResources base="C:/Users/user/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.jpa/2.7.7/org.eclipse.persistence.jpa-2.7.7.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/org.eclipse.persistence.jpa-2.7.7.jar"/>
+    <PostResources base="C:/Users/user/.m2/repository/org/eclipse/persistence/jakarta.persistence/2.2.3/jakarta.persistence-2.2.3.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jakarta.persistence-2.2.3.jar"/>
+    <PostResources base="C:/Users/user/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.jpa.jpql/2.7.7/org.eclipse.persistence.jpa.jpql-2.7.7.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/org.eclipse.persistence.jpa.jpql-2.7.7.jar"/>
+    <PostResources base="C:/Users/user/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.moxy/2.7.7/org.eclipse.persistence.moxy-2.7.7.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/org.eclipse.persistence.moxy-2.7.7.jar"/>
+    <PostResources base="C:/Users/user/.m2/repository/org/eclipse/persistence/javax.persistence/2.2.1/javax.persistence-2.2.1.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/javax.persistence-2.2.1.jar"/>
+    <PostResources base="C:/Users/user/.m2/repository/mysql/mysql-connector-java/8.0.11/mysql-connector-java-8.0.11.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/mysql-connector-java-8.0.11.jar"/>
+    <PostResources base="C:/Users/user/.m2/repository/com/google/protobuf/protobuf-java/2.6.0/protobuf-java-2.6.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/protobuf-java-2.6.0.jar"/>
+  </Resources>
+</Context>
