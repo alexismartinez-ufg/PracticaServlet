@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@WebServlet(name = "SvEstudiantes", urlPatterns = {"/SvEstudiantes"})
+@WebServlet("/test")
 public class SvEstudiantes extends HttpServlet {
     
     Controladora control = new Controladora();

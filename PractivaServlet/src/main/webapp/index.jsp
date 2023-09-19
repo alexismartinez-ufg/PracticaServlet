@@ -24,7 +24,7 @@
     <div class="row">
         <div class="col-md-4">
         <h2>Datos del Cliente</h2>
-        <form action="SvEstudiantes" method="Post">
+        <form action="test" method="Post">
             <div class="col-md-12">
                 <div class="mb-3">
                 <label>Nombre del estudiante</label><input type="text" name="nombre" class="form-control">
@@ -90,7 +90,7 @@
                     %>
                 </tbody>
             </table>
-            <a href="SvEstudiantes" class="btn btn-info">Actualizar Lista</a>
+            <a href="test" class="btn btn-info">Actualizar Lista</a>
         </div>
     </div>
 </div>
