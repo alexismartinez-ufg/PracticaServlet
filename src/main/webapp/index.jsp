@@ -69,6 +69,7 @@
                         <th>NIE</th>
                         <th>Municipio</th>
                         <th>Encargado</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -84,6 +85,12 @@
                             <td><%= (estudiante.getNie() != null) ? estudiante.getNie() : "" %></td>
                             <td><%= (estudiante.getMunicipio() != null) ? estudiante.getMunicipio() : "" %></td>
                             <td><%= (estudiante.getEncargado() != null) ? estudiante.getEncargado() : "" %></td>
+                            <td>
+                                <form action="EliminarEstudiante" method="post">
+                                    <input type="hidden" name="idEstudiante" value="<%= estudiante.getId() %>">
+                                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                                </form>
+                            </td>
                         </tr>
                     <%    }
                     }

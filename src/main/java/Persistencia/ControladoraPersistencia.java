@@ -6,6 +6,7 @@
 package Persistencia;
 
 import Logica.Estudiante;
+import Persistencia.exceptions.NonexistentEntityException;
 import java.util.List;
 
 /**
@@ -21,5 +22,11 @@ public class ControladoraPersistencia {
     
     public List<Estudiante> ObtenerEstudiantes(){
         return estuJpa.findEstudianteEntities();
+    }
+    
+    public void EliminarEstudiante(int userid) throws NonexistentEntityException{
+        if(userid !=0){
+            estuJpa.destroy(userid); 
+        }
     }
 }

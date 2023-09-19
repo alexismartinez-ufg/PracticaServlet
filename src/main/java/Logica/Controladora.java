@@ -6,6 +6,7 @@
 package Logica;
 
 import Persistencia.ControladoraPersistencia;
+import Persistencia.exceptions.NonexistentEntityException;
 import java.util.List;
 
 
@@ -22,5 +23,11 @@ public class Controladora {
      
     public List<Estudiante> ObtenerEstudiantes(){
         return controlPersis.ObtenerEstudiantes();
+    }
+    
+    public void EliminarEstudiante(int userid) throws NonexistentEntityException{
+        if(userid!=0){
+            controlPersis.EliminarEstudiante(userid);
+        }
     }
 }
