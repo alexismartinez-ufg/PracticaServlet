@@ -3,6 +3,7 @@ Logica\Estudiante_.class
 com\practivaservlet\EliminarEstudiante.class
 Logica\Controladora.class
 Persistencia\exceptions\NonexistentEntityException.class
+com\practivaservlet\EditarEstudiante.class
 Persistencia\EstudianteJpaController.class
 Persistencia\exceptions\PreexistingEntityException.class
 Persistencia\ControladoraPersistencia.class

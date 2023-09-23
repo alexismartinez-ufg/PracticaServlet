@@ -30,4 +30,12 @@ public class Controladora {
             controlPersis.EliminarEstudiante(userid);
         }
     }
+    
+    public Estudiante ObtenerUsuarioById(int idEstudiante){
+        return controlPersis.ObtenerUsuarioById(idEstudiante);
+    }
+    
+    public void EditarEstudiante(Estudiante estu) throws Exception{
+        controlPersis.EditarEstudiante(estu);
+    }
 }

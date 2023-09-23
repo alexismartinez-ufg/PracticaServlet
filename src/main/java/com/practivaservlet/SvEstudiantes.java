@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
+import javax.servlet.http.HttpSession;
 
 
 @WebServlet(name = "SvEstudiantes", urlPatterns = {"/SvEstudiantes"})
@@ -21,7 +22,6 @@ public class SvEstudiantes extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
@@ -41,6 +41,14 @@ public class SvEstudiantes extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        String estudianteId = request.getParameter("estudianteId");
+                
+        if(estudianteId != null && estudianteId != "" ){
+            Estudiante estudianteToEdit = control.ObtenerUsuarioById(Integer.parseInt(estudianteId));    
+            request.setAttribute("estudianteToEdit", estudianteToEdit);
+        }
+
+        
         List<Estudiante> estudiantes = control.ObtenerEstudiantes();
         request.setAttribute("estudiantes", estudiantes);
         
@@ -54,6 +62,9 @@ public class SvEstudiantes extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        System.out.println("REQUEST => "+request.getParameter("nombre"));
+        
         String nombre = request.getParameter("nombre");
         String apellido = request.getParameter("apellido");
         String sexo = request.getParameter("sexo");
@@ -61,6 +72,8 @@ public class SvEstudiantes extends HttpServlet {
         String municipio = request.getParameter("municipio");
         String encargado = request.getParameter("encargado");
         String nie = request.getParameter("nie");
+        
+        System.out.println("NOMBRE => "+nombre);
 
         Estudiante estudiante = new Estudiante();
         estudiante.setNombre(nombre);

@@ -29,4 +29,12 @@ public class ControladoraPersistencia {
             estuJpa.destroy(userid); 
         }
     }
+    
+    public Estudiante ObtenerUsuarioById(int userid){
+       return estuJpa.findEstudiante(userid);
+    }
+    
+    public void EditarEstudiante (Estudiante estu) throws Exception{
+        estuJpa.edit(estu);
+    }
 }
